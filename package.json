@@ -1,0 +1,10 @@
+{
+    "name": "ainz-greeter-bot",
+    "version": "1.0.0",
+    "description": "Discord Greeter Bot for AINZ FC",
+    "main": "bot.js",
+    "author": "Mackenzie Clark",
+    "dependencies": {
+        "discord.js": "^11.5.1"
+    }
+}
