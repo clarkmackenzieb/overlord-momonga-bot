@@ -1,8 +1,7 @@
 
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const { token } = require('./auth');
-
+require('dotenv').config();
 
 const lordMomongaId = "663446622759288833";
 
@@ -16,7 +15,7 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.login(token);
+client.login(process.env.TOKEN);
 
   client.on('guildMemberAdd', member => {
     const welcomeChannel = member.guild.channels.find(ch => ch.id === ainzWelcomeChannelId);
