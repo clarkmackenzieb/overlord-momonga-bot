@@ -1,6 +1,8 @@
 
 const Discord = require('discord.js');
 const client = new Discord.Client();
+var express = require('express');
+var app = express();
 require('dotenv').config();
 
 const lordMomongaId = "663446622759288833";
@@ -12,7 +14,7 @@ const ainzMemberRoleId = "525080674219196428";
 const ainzRoleString = "ainz";
 
 const host = '0.0.0.0';
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3005;
 
 app.listen(port, host, function() {
   console.log("Server started.......");
